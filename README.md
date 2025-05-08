@@ -116,14 +116,12 @@ fun createTypefaceSpan(asset: AssetManager) : TypefaceSpan {
 
 ```
 python3 android_assets_gen.py 
-Enter the assets folder path: app/src/main/assets
 Enter the package name: com.app.demo
-Enter the Kotlin output folder path: app/src/main/java/com/app/demo
 ```
 - Run terminal, case command line: 
 
 ```
-python3 android_assets_gen.py app/src/main/assets com.app.demo app/src/main/java/com/app/demo
+python3 android_assets_gen.py com.app.demo
 ```
 
 ### Output example 

@@ -188,20 +188,16 @@ def write_enum_class(output_folder_path, package_name, folder_path, files_in_fol
 
 if __name__ == "__main__":
     
-    package_name_output_folder = 'gen'
-    input_folder_path = ""
     package_name_app = ""
-    output_folder_path = ""
-    if len(sys.argv) > 2:
-        input_folder_path = sys.argv[1].strip()
-        package_name_app = sys.argv[2].strip()
-        output_folder_path = sys.argv[3].strip()
+    
+    if len(sys.argv) > 0:
+        package_name_app = sys.argv[1].strip()
     else:
-        input_folder_path = input("Enter the assets folder path: ").strip()
         package_name_app = input("Enter the package name: ").strip()
-        output_folder_path = input("Enter the Kotlin output folder path: ").strip()
 
-
+    package_name_output_folder = 'gen'
+    input_folder_path = "app/src/main/assets"
+    output_folder_path = "app/src/main/java/" + package_name_app.replace(".", "/")
     create_child_folder(output_folder_path, package_name_output_folder)
     default_output_folder = output_folder_path + f"/{package_name_output_folder}/"
 
