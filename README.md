@@ -91,6 +91,8 @@ Enter the Kotlin output folder path: /Users/userName/x/y/y/app/src/main/java/com
 ```
 python3 android_assets_gen.py assets_folder_path package_name  kotlin_output_folder
 python3 android_assets_gen.py  /Users/userName/x/y/z/app/src/main/assets com.app.demo /Users/userName/x/y/y/app/src/main/java/com/app/demo
+
+python3 android_assets_gen.py app/src/main/assets com.smartwidgetlabs.chatgpt app/src/main/java/com/smartwidgetlabs/chatgpt
 ```
 
 ### Output example 
