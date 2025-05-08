@@ -75,22 +75,50 @@ fun createTypefaceSpan(asset: AssetManager) : TypefaceSpan {
 
 ### Usage
 
-- Download file: `android_assets_gen.py`
+- Download file: `android_assets_gen.py` and save it in Android Root project
+
+```
+<Root Project>
+├── .gradle
+├── app
+│   └── src
+│       ├── androidTest
+│       └── main 
+│           ├── assets 
+|                   └── app_resources
+|                            ├── img_sketch.jpg
+|                            ├── Inter-Bold.ttf
+|                            └── language.json
+│           ├── java
+│           │   └── com.app.demo
+│           │       ├── ui.theme
+│           │       └── MainActivity.kt
+│           ├── res
+│           └── AndroidManifest.xml
+│       └── test [unitTest]
+├── build.gradle.kts
+├── proguard-rules.pro
+├── android_assets_gen.py  <---
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── local.properties
+└── settings.gradle.kts
+```
+
 - Run terminal, case input: 
 
 ```
 python3 android_assets_gen.py 
-Enter the assets folder path: /Users/userName/x/y/z/app/src/main/assets
+Enter the assets folder path: app/src/main/assets
 Enter the package name: com.app.demo
-Enter the Kotlin output folder path: /Users/userName/x/y/y/app/src/main/java/com/app/demo
+Enter the Kotlin output folder path: app/src/main/java/com/app/demo
 ```
 - Run terminal, case command line: 
 
 ```
-python3 android_assets_gen.py assets_folder_path package_name  kotlin_output_folder
-python3 android_assets_gen.py  /Users/userName/x/y/z/app/src/main/assets com.app.demo /Users/userName/x/y/y/app/src/main/java/com/app/demo
-
-python3 android_assets_gen.py app/src/main/assets com.smartwidgetlabs.chatgpt app/src/main/java/com/smartwidgetlabs/chatgpt
+python3 android_assets_gen.py app/src/main/assets com.app.demo app/src/main/java/com/app/demo
 ```
 
 ### Output example 
