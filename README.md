@@ -78,17 +78,17 @@ fun createTypefaceSpan(asset: AssetManager) : TypefaceSpan {
 - Download file: `android_assets_gen.py` and save it in Android Root project
 
 ```
-<Root Project>
+<Root Projects>
 ├── .gradle
 ├── app
 │   └── src
 │       ├── androidTest
-│       └── main 
-│           ├── assets 
-|                   └── app_resources
-|                            ├── img_sketch.jpg
-|                            ├── Inter-Bold.ttf
-|                            └── language.json
+│       └── main
+│           ├── assets
+│           │   └── app_resources
+│           │       ├── img_sketch.jpg
+│           │       ├── Inter-Bold.ttf
+│           │       └── language.json
 │           ├── java
 │           │   └── com.app.demo
 │           │       ├── ui.theme
@@ -96,15 +96,20 @@ fun createTypefaceSpan(asset: AssetManager) : TypefaceSpan {
 │           ├── res
 │           └── AndroidManifest.xml
 │       └── test [unitTest]
+├── .gitignore
 ├── build.gradle.kts
 ├── proguard-rules.pro
-├── android_assets_gen.py  <---
+├── gradle
+│   └── .gitignore
+├── android_assets_gen.py                      <---------------
 ├── build.gradle.kts
 ├── gradle.properties
 ├── gradlew
 ├── gradlew.bat
 ├── local.properties
-└── settings.gradle.kts
+├── settings.gradle.kts
+├── External Libraries
+└── Scratches and Consoles
 ```
 
 - Run terminal, case input: 
