@@ -14,8 +14,6 @@ Using asset path string directly is not safe.
 ```
 main
 └── assets
-    ├── avatars
-    ├── frames
     └── app_resources
         ├── img_sketch.jpg
         ├── Inter-Bold.ttf
