@@ -8,9 +8,8 @@ Implemented by Python
 Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](https://github.com/FlutterGen/flutter_gen)
 
 
-<video width="500" controls>
-  <source type="video/mp4" src="https://ttpho.github.io/assets/android_assets_gen/output.mp4" >
-</video>
+https://github.com/user-attachments/assets/16b0944c-46f0-4336-8577-1fe789cbb51e
+
 
 ### Motivation
 
