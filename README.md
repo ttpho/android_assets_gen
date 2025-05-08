@@ -7,6 +7,11 @@ Implemented by Python
 
 Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](https://github.com/FlutterGen/flutter_gen)
 
+
+<video width="500" controls>
+  <source type="video/mp4" src="https://ttpho.github.io/assets/android_assets_gen/output.mp4" >
+</video>
+
 ### Motivation
 
 Using asset path string directly is not safe.
