@@ -2,7 +2,7 @@
 
 The Kotlin code generator for your assets, fonts, json, … — Get rid of all String-based APIs.
 
-Implmented by Python
+Implemented by Python
 
 
 Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](https://github.com/FlutterGen/flutter_gen)
