@@ -11,6 +11,10 @@ Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](http
 https://github.com/user-attachments/assets/16b0944c-46f0-4336-8577-1fe789cbb51e
 
 
+
+![Bản vẽ không có tiêu đề](https://github.com/user-attachments/assets/dc32073f-8487-47ed-b75b-48eda2570827)
+
+
 ### Motivation
 
 The development of Android applications, when using resources from the Asset folder, often involves hardcoding file paths. This becomes quite challenging as it's unclear where a particular resource is used, when it's accessed, and what feature it impacts. Consequently, a centralized place to manage these asset resources is necessary.
