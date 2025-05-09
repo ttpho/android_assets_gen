@@ -13,6 +13,8 @@ https://github.com/user-attachments/assets/16b0944c-46f0-4336-8577-1fe789cbb51e
 
 ### Motivation
 
+The development of Android applications, when using resources from the Asset folder, would use file paths that were quite hardcoded. This became excessively difficult because it was unclear where this resource was used, when it was used, and which feature it affected. Therefore, there needs to be a place to manage these asset resources.
+
 Using asset path string directly is not safe.
 
 ```
