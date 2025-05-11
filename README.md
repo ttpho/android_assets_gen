@@ -2,8 +2,6 @@
 
 The Kotlin code generator for your assets, fonts, json, … — Get rid of all String-based APIs.
 
-Implemented by Python
-
 
 Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](https://github.com/FlutterGen/flutter_gen)
 
@@ -12,7 +10,7 @@ https://github.com/user-attachments/assets/16b0944c-46f0-4336-8577-1fe789cbb51e
 
 
 
-![Bản vẽ không có tiêu đề](https://github.com/user-attachments/assets/dc32073f-8487-47ed-b75b-48eda2570827)
+![](https://github.com/user-attachments/assets/dc32073f-8487-47ed-b75b-48eda2570827)
 
 
 ### Motivation
@@ -140,7 +138,7 @@ Enter the package name: com.app.demo
 python3 android_assets_gen.py com.app.demo
 ```
 
-### Output example 
+### Output Example 
 
 ```kotlin
 /// GENERATED CODE - DO NOT MODIFY BY HAND
