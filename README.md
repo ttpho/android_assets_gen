@@ -37,7 +37,7 @@ What would happen if you made a typo?
 ```kotlin
 fun loadImageBad(imageView: ImageView) {
     Glide.with(imageView)
-        .load(Uri.parse("file:///android_asset/app_resources/img_sketch.jpg}"))
+        .load(Uri.parse("file:///android_asset/app_resources/img_sketch.jpg"))
         .into(imageView)
 }
 
