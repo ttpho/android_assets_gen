@@ -5,12 +5,16 @@ The Kotlin code generator for your assets, fonts, json, … — Get rid of all S
 
 Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](https://github.com/FlutterGen/flutter_gen)
 
+[AndroidGen](https://github.com/ttpho/AndroidGen): Java version
+
 
 https://github.com/user-attachments/assets/16b0944c-46f0-4336-8577-1fe789cbb51e
 
 
 
 ![](https://github.com/user-attachments/assets/dc32073f-8487-47ed-b75b-48eda2570827)
+
+
 
 
 ### Motivation
