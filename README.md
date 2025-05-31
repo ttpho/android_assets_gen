@@ -1,6 +1,6 @@
 # Android Assets Gen
 
-The Kotlin code generator for your assets, fonts, json, … — Get rid of all String-based APIs.
+Android Assets Gen is a Kotlin code generator designed to streamline the management of assets, fonts, JSON files, and other resources in Android applications. The primary goal of this project is to eliminate the reliance on string-based APIs for accessing these resources, which can lead to errors and make code maintenance challenging.
 
 
 Inspired by [SwiftGen](https://github.com/SwiftGen/SwiftGen) & [FlutterGen](https://github.com/FlutterGen/flutter_gen)
@@ -15,9 +15,19 @@ https://github.com/user-attachments/assets/16b0944c-46f0-4336-8577-1fe789cbb51e
 ![](https://github.com/user-attachments/assets/dc32073f-8487-47ed-b75b-48eda2570827)
 
 
+## Purpose
 
+In Android development, accessing resources from the asset folder often involves hardcoding file paths. This practice can create confusion regarding where a particular resource is used, when it is accessed, and what features it impacts. Android Assets Gen addresses these issues by providing a centralized solution for managing asset resources.
 
-### Motivation
+## Problems Addressed
+
+1. **Hardcoded Paths**: The project helps developers avoid hardcoding file paths, reducing the risk of typos and errors.
+2. **Resource Management**: It offers a structured way to manage asset resources, making it easier to understand and maintain the codebase.
+3. **Type Safety**: By generating Kotlin enum classes, the project enhances type safety when accessing assets, ensuring that developers use the correct resource paths.
+
+With Android Assets Gen, developers can focus on building features rather than worrying about the intricacies of resource management. The generated code provides a clear and safe way to access assets, improving overall code quality and maintainability.
+
+## Motivation
 
 The development of Android applications, when using resources from the Asset folder, often involves hardcoding file paths. This becomes quite challenging as it's unclear where a particular resource is used, when it's accessed, and what feature it impacts. Consequently, a centralized place to manage these asset resources is necessary.
 
@@ -91,7 +101,7 @@ fun createTypefaceSpan(asset: AssetManager) : TypefaceSpan {
 
 
 
-### Usage
+## Usage
 
 - Download file: `android_assets_gen.py` and save it in Android Root project
 
@@ -142,7 +152,7 @@ Enter the package name: com.app.demo
 python3 android_assets_gen.py com.app.demo
 ```
 
-### Output Example 
+## Output Example 
 
 ```kotlin
 /// GENERATED CODE - DO NOT MODIFY BY HAND
@@ -165,3 +175,35 @@ fun AppResources.path() = "app_resources/${this.fileName}"
 fun AppResources.toUri(): Uri = Uri.parse("file:///android_asset/${path()}")
 
 ```
+
+## Frequently Asked Questions (FAQ)
+
+### What is Android Assets Gen?
+
+Android Assets Gen is a Kotlin code generator designed to streamline the management of asset resources in Android applications. It eliminates the need for hardcoded string paths, making your code safer and easier to maintain.
+
+### Why should I use Android Assets Gen?
+
+Using Android Assets Gen helps prevent errors associated with hardcoded file paths, such as typos or incorrect references. It provides a centralized way to manage asset resources, improving code readability and maintainability.
+
+### How do I install Android Assets Gen?
+
+To install Android Assets Gen, download the `android_assets_gen.py` script and place it in the root directory of your Android project. Follow the usage instructions in the `usage.md` file to set it up.
+
+### Can I customize the generated Kotlin classes?
+
+Yes, while the generated Kotlin classes are designed to be used as-is, you can modify them after generation if you need to add custom functionality. However, be cautious not to alter the structure that the generator relies on.
+
+### What types of assets can I manage with Android Assets Gen?
+
+Android Assets Gen can manage various types of assets, including images, fonts, and JSON files. As long as the assets are located in the `assets` folder of your Android project, they can be processed by the generator.
+
+### What should I do if I encounter an error while running the script?
+
+If you encounter an error, check the console output for any error messages. Common issues include incorrect folder paths or missing permissions. Ensure that the `assets` folder exists and contains the files you want to manage.
+
+### Is there a way to regenerate the Kotlin classes?
+
+Yes, you can run the `android_assets_gen.py` script again at any time to regenerate the Kotlin classes. This will update the classes based on any changes made to the assets in the `assets` folder.
+
+
